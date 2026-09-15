@@ -24,14 +24,22 @@ The goal to this project is to Transition the business of WinLocal Giveaways Ltd
 
 
 ### AWS Services Used
-Virtual Private Cloud (VPC)
-Elastic Compute Cloud (EC2) & AMIs 
-Auto Scaling Groups (ASG)
-Application Load Balancer (ALB)
-Relational Database Service (RDS MySQL)
-Simple Storage Service (S3)
-Identity and Access Management (IAM)
-Security Groups & Internet Gateway (IGW)
+-Virtual Private Cloud (VPC)
+
+-Elastic Compute Cloud (EC2) & AMIs 
+
+-Auto Scaling Groups (ASG)
+
+-Application Load Balancer (ALB)
+
+-Relational Database Service (RDS MySQL)
+
+-Simple Storage Service (S3)
+
+-Identity and Access Management (IAM)
+
+-Security Groups & Internet Gateway (IGW)
+
 
 ### Screenshots
 -Bastion Host EC2 Instance Details
