@@ -2,10 +2,10 @@
 
 This project demonstrates how to migrate a legacy infrastructure to a secure, highly available, and scalable 3-tier cloud architecture on AWS that would aligned with NIST CSF 2.0 principles.
 
-### --------- Goal------------
+## --------- Goal------------
 The goal to this project is to Transition the business of WinLocal Giveaways Ltd from an unsegmentaed Dublin data centre to a secure-by design AWS VPC to prevent any sorts of ransomeware lateral movement, remove service downtime, and ensure data integrity.
 
-### ------What I Build--------
+## ------What I Build--------
 -Architected a multi-tier VPC across 2 Availability Zones (us-east-1a and us-east-1b).
 
 -Isolated web servers in private subnets with no direct public IP addresses.
@@ -23,7 +23,7 @@ The goal to this project is to Transition the business of WinLocal Giveaways Ltd
 -Configured an Amazon S3 bucket with "Block All Public Access: ON" for secure asset storage.
 
 
-## AWS Services Used
+### AWS Services Used
 Virtual Private Cloud (VPC)
 Elastic Compute Cloud (EC2) & AMIs 
 Auto Scaling Groups (ASG)
@@ -33,7 +33,7 @@ Simple Storage Service (S3)
 Identity and Access Management (IAM)
 Security Groups & Internet Gateway (IGW)
 
-## Screenshots
+### Screenshots
 -Bastion Host EC2 Instance Details
 
 -Security Group Restricted SSH Access
@@ -52,7 +52,7 @@ Security Groups & Internet Gateway (IGW)
 
 -S3 Storage Bucket Permissions & Object View
 
-### -------How it works-------
+## -------How it works-------
 -User request arrives at Application Load BalancerPublic traffic enters via the Internet Gateway (IGW) to the ALB on Port 80. The ALB inspects request health and routes traffic to web instances in private subnets.         Inbound Rule: HTTP Port 80 from 0.0.0.0/0
 
 -Web server processes request in private isolationThe EC2 web server runs inside a private subnet without a public IP. It accepts traffic exclusively from the ALB Security Group.           Inbound Rule: HTTP Port 80 strictly from ALB-SG
@@ -66,7 +66,7 @@ Security Groups & Internet Gateway (IGW)
 When competition traffic pushes CPU utilization past 60%, ASG automatically launches an additional web instance from the pre-configured golden AMI. Once traffic normalizes, extra instances terminate to save operational costs.
 
 
-### ------What I learned-------
+## ------What I learned-------
 -Designing multi-tier VPC network segmentation across Multi-AZ environments.
 
 -Implementing "Defense-in-Depth" security principles using Security Groups and jump hosts.
@@ -77,7 +77,7 @@ When competition traffic pushes CPU utilization past 60%, ASG automatically laun
 
 -Mapping cloud infrastructure capabilities to the NIST Cybersecurity Framework (CSF 2.0).
 
-### --Why this project matters--
+## --Why this project matters--
 This project demonstrates:
 
 -Hands-on AWS cloud architecture design capabilities.
