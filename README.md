@@ -1,1 +1,0 @@
-# secure-aws-cloud-infrastructure-design
